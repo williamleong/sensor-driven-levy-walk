@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; worker-src 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sensor-Driven Lévy Walk enables decentralized, map-free exploration for minimal-sensing nano-UAV teams.">
+  <meta name="keywords" content="sensor-driven Lévy walk, nano-UAV, decentralized exploration, multi-robot systems">
+  <meta name="author" content="Wai Lun Leong, Teo Swee Huat Rodney">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://williamleong.github.io/sensor-driven-levy-walk/">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://williamleong.github.io/sensor-driven-levy-walk/">
+  <meta property="og:title" content="Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks on Minimal-Sensing Platforms">
+  <meta property="og:description" content="Sensor-Driven Lévy Walk enables decentralized, map-free exploration for minimal-sensing nano-UAV teams.">
+  <meta property="og:image" content="https://williamleong.github.io/sensor-driven-levy-walk/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Preview of the SDLW project page showing the paper title, authors Wai Lun Leong and Teo Swee Huat Rodney, and Open Arena, Rooms and Corridors, and Cluttered Arena simulations with four exploring robots.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks on Minimal-Sensing Platforms">
+  <meta name="twitter:description" content="Sensor-Driven Lévy Walk enables decentralized, map-free exploration for minimal-sensing nano-UAV teams.">
+  <meta name="twitter:image" content="https://williamleong.github.io/sensor-driven-levy-walk/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="Preview of the SDLW project page showing the paper title, authors Wai Lun Leong and Teo Swee Huat Rodney, and Open Arena, Rooms and Corridors, and Cluttered Arena simulations with four exploring robots.">
+  <meta name="citation_title" content="Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks on Minimal-Sensing Platforms">
+  <meta name="citation_author" content="Leong, Wai Lun">
+  <meta name="citation_author" content="Teo, Swee Huat Rodney">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2607.25195">
+  <meta name="theme-color" content="#2563eb">
+  <title>Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks | IROS 2026</title>
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script defer src="static/js/index.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks on Minimal-Sensing Platforms",
+    "description": "Sensor-Driven Lévy Walk enables decentralized, map-free exploration for minimal-sensing nano-UAV teams.",
+    "author": [
+      {"@type": "Person", "name": "Wai Lun Leong", "affiliation": {"@type": "Organization", "name": "National University of Singapore"}},
+      {"@type": "Person", "name": "Teo Swee Huat Rodney", "affiliation": {"@type": "Organization", "name": "National University of Singapore"}}
+    ],
+    "datePublished": "2026",
+    "publisher": {"@type": "Organization", "name": "2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"},
+    "url": "https://williamleong.github.io/sensor-driven-levy-walk/",
+    "mainEntityOfPage": "https://williamleong.github.io/sensor-driven-levy-walk/",
+    "sameAs": [
+      "https://arxiv.org/abs/2607.25195",
+      "https://doi.org/10.48550/arXiv.2607.25195"
+    ],
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+<body>
+  <button class="scroll-to-top" title="Scroll to top" aria-label="Scroll to top">
+    <svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"/></svg>
+  </button>
+
+  <main id="main-content">
+    <section class="hero publication-header" aria-labelledby="publication-title">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 id="publication-title" class="title is-1 publication-title">Decentralized Scalable Exploration via Emergent Adaptive Lévy Walks on Minimal-Sensing Platforms</h1>
+              <div class="publication-author-group">
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">Wai Lun Leong</span>, <span class="author-block">Teo Swee Huat Rodney</span>
+                </div>
+                <div class="publication-affiliation">National University of Singapore</div>
+              </div>
+              <div class="is-size-5 publication-venue">IROS 2026, Pittsburgh</div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2607.25195" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 384 512"><path d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"/></svg></span><span>Paper</span>
+                    </a>
+                  </span>
+                  <span class="link-block">
+                    <a href="https://github.com/williamleong/sdlw" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span><span>Code</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="arena-grid" class="hero is-small" aria-labelledby="arena-grid-heading">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 id="arena-grid-heading" class="title is-3 has-text-centered">SDLW in Action</h2>
+          <p class="subtitle has-text-centered">SDLW turns four local range readings into sensor-adaptive, map-free exploration for decentralized nano-UAV teams.</p>
+          <div class="arena-grid">
+            <article class="arena-card">
+              <h3>Open Arena</h3>
+              <video controls muted playsinline loop preload="metadata" poster="static/images/arena-open-poster.jpg" data-source="static/videos/arena-open.mp4" aria-label="SDLW exploration in the open arena">
+                <source src="static/videos/arena-open.mp4" type="video/mp4">
+                SDLW exploration video for the open arena.
+              </video>
+              <p>SDLW coverage with four robots.</p>
+            </article>
+            <article class="arena-card">
+              <h3>Rooms and Corridors</h3>
+              <video controls muted playsinline loop preload="metadata" poster="static/images/arena-rooms-corridors-poster.jpg" data-source="static/videos/arena-rooms-corridors.mp4" aria-label="SDLW exploration in the rooms and corridors arena">
+                <source src="static/videos/arena-rooms-corridors.mp4" type="video/mp4">
+                SDLW exploration video for the rooms-and-corridors arena.
+              </video>
+              <p>SDLW responds to structured geometry.</p>
+            </article>
+            <article class="arena-card">
+              <h3>Cluttered Arena</h3>
+              <video controls muted playsinline loop preload="metadata" poster="static/images/arena-cluttered-poster.jpg" data-source="static/videos/arena-cluttered.mp4" aria-label="SDLW exploration in the cluttered arena">
+                <source src="static/videos/arena-cluttered.mp4" type="video/mp4">
+                SDLW exploration video for the cluttered arena.
+              </video>
+              <p>SDLW maintains reactive exploration among obstacles.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abstract" class="section hero is-light" aria-labelledby="abstract-heading">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 id="abstract-heading" class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>Efficient autonomous exploration with palm-sized nano-UAVs remains challenging due to severe limitations in sensing, computation, and flight endurance. We present a lightweight sensor-driven Lévy walk (SDLW) controller for aerial robots weighing under 50 grams and equipped with sparse local sensing. The method combines discrete Lévy step-length sampling with a sensor-reactive heading policy using directional range measurements. Each robot independently samples its Lévy exponent from a uniform prior to diversify exploration without inter-robot communication for exploration control. Each robot then selects headings using a von Mises distribution that biases motion toward open directions while preserving superdiffusive exploration properties. The controller operates at constant computational cost, enabling scalable multi-UAV exploration. Simulation results show coverage improvements of 79.6% in open arenas, 43.1% in rooms-and-corridors layouts, and 13.6% in cluttered environments, with collision reductions of 13.0%, 7.1%, and 1.4%, respectively, relative to a uniform-heading Lévy walk baseline. This work provides a practical framework for scalable multi-robot exploration on minimal-sensing, resource-constrained nano-UAVs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section" aria-labelledby="method-heading">
+      <div class="container is-max-desktop">
+        <h2 id="method-heading" class="title is-3 has-text-centered">Method: Sense, Bias, Walk</h2>
+        <div class="method-steps content">
+          <article>
+            <h3 class="title is-4">Sense</h3>
+            <p>Each nano-UAV reads four local directional ranges: front, left, right, and back. SDLW uses this sparse local sensing without global localization, map building, or exploration communication.</p>
+          </article>
+          <article>
+            <h3 class="title is-4">Bias</h3>
+            <p>A sensor-weighted resultant sets the mean direction of a von Mises heading distribution. Its normalized strength measures directional imbalance in the range readings. A stronger normalized resultant produces broader angular sampling around the mean direction, while a weaker resultant produces more concentrated sampling.</p>
+          </article>
+          <article>
+            <h3 class="title is-4">Walk</h3>
+            <p>Each robot samples a discrete Lévy exponent independently from a uniform prior and executes heavy-tailed motion segments. The resulting controller remains map-free, decentralized, and constant-time.</p>
+          </article>
+        </div>
+        <figure class="has-text-centered method-overview-figure" tabindex="0" aria-label="Scrollable method overview diagram">
+          <img src="static/images/method-overview.svg" alt="Three SDLW stages: four range readings, stochastic headings biased toward open space, and a straight discrete Lévy motion segment." loading="lazy">
+          <figcaption>SDLW combines four directional range readings, stochastic headings biased toward open space, and straight discrete Lévy motion segments.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="results" class="section hero is-light" aria-labelledby="results-heading">
+      <div class="container is-max-desktop">
+        <h2 id="results-heading" class="title is-3 has-text-centered">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <p>Our experiments show that SDLW accelerates coverage accumulation relative to Uniform Heading Lévy Walk (UHLW) across the Open, Rooms and Corridors, and Cluttered (50 obstacles) arenas. SDLW improves mean coverage by 79.6%, 43.1%, and 13.6%, respectively, while reducing mean collision events by 13.0%, 7.1%, and 1.4%, respectively. These results demonstrate the benefit of sensor-adaptive headings across environments with varied geometric complexity.</p>
+        </div>
+        <div class="columns is-multiline">
+          <figure class="column is-half has-text-centered">
+            <img src="static/images/coverage-open.svg" alt="Published coverage-over-time plot for the Open arena." loading="lazy">
+            <figcaption>Coverage over time in the Open arena for SDLW and UHLW across team sizes.</figcaption>
+          </figure>
+          <figure class="column is-half has-text-centered">
+            <img src="static/images/coverage-rooms-corridors.svg" alt="Published coverage-over-time plot for the Rooms and Corridors arena." loading="lazy">
+            <figcaption>Coverage over time in the Rooms and Corridors arena for SDLW and UHLW across team sizes.</figcaption>
+          </figure>
+          <figure class="column is-half has-text-centered">
+            <img src="static/images/coverage-cluttered.svg" alt="Published coverage-over-time plot for the Cluttered arena." loading="lazy">
+            <figcaption>Coverage over time in the Cluttered arena for SDLW and UHLW across team sizes.</figcaption>
+          </figure>
+          <figure class="column is-half has-text-centered">
+            <img src="static/images/collisions.svg" alt="Published grouped bar chart of collision events per trial by arena and team size." loading="lazy">
+            <figcaption>Collision events per trial across arenas and team sizes; error bars show standard error.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="BibTeX" class="section" aria-labelledby="bibtex-heading">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 id="bibtex-heading" class="title is-3">BibTeX</h2>
+          <button class="copy-bibtex-btn" title="Copy BibTeX to clipboard" aria-label="Copy BibTeX citation">
+            <svg class="svg-icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg><span class="copy-text">Copy</span>
+            <span class="copy-status is-sr-only" role="status" aria-live="polite"></span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{leong2026decentralized,
+  title={Decentralized Scalable Exploration via Emergent Adaptive L{\'e}vy Walks on Minimal-Sensing Platforms},
+  author={Leong, Wai Lun and Teo, Swee Huat Rodney},
+  booktitle={2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2026},
+  address={Pittsburgh, PA, USA},
+  doi={10.48550/arXiv.2607.25195},
+  url={https://arxiv.org/abs/2607.25195}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">template by Eliahu Horwitz</a>, which was adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> project page. You are free to borrow the source code of this website; please link back to this page in the footer. This website is licensed under a <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

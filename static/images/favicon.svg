@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">SDLW sensor mark</title>
+  <desc id="desc">A central robot dot with four directional sensor rays.</desc>
+  <path d="M32 25V7M25 32H7M39 32H57M32 39V57" fill="none" stroke="#0072B2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M27 12L32 6L37 12M12 27L6 32L12 37M52 27L58 32L52 37M27 52L32 58L37 52" fill="none" stroke="#0072B2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="9" fill="#0072B2"/>
+</svg>

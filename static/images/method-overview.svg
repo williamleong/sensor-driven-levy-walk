@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sensor-driven Lévy walk method overview</title>
+  <desc id="desc">Three left-to-right stages show four directional range readings, stochastic headings biased toward open space, and a straight discrete Lévy segment executed by a robot.</desc>
+  <rect width="1200" height="360" rx="24" fill="#F8FAFC"/>
+  <path d="M382 180H438M762 180H818" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M428 165L443 180L428 195M808 165L823 180L808 195" fill="none" stroke="#1E293B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g id="stage-range-readings" aria-label="Stage one: four directional range readings">
+    <rect x="34" y="34" width="330" height="292" rx="18" fill="#F8FAFC" stroke="#0072B2" stroke-width="4"/>
+    <text x="68" y="82" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">1. Range readings</text>
+    <circle cx="199" cy="193" r="22" fill="#1E293B"/>
+    <circle cx="199" cy="193" r="7" fill="#F8FAFC"/>
+    <path d="M199 153V111M159 193H105M239 193H293M199 233V275" fill="none" stroke="#0072B2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M188 122L199 105L210 122M116 182L99 193L116 204M282 182L299 193L282 204M188 264L199 281L210 264" fill="none" stroke="#0072B2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="218" y="126" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="20">rF</text>
+    <text x="112" y="176" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="20">rL</text>
+    <text x="267" y="176" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="20">rR</text>
+    <text x="218" y="277" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="20">rB</text>
+    <text x="199" y="306" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="18" text-anchor="middle">Sparse local sensing</text>
+  </g>
+
+  <g id="stage-sensor-weighted-heading" aria-label="Stage two: stochastic heading biased toward open space">
+    <rect x="454" y="34" width="330" height="292" rx="18" fill="#F8FAFC" stroke="#A23B72" stroke-width="4"/>
+    <text x="488" y="82" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">2. Bias heading</text>
+    <defs>
+      <marker id="pink-arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0 0L10 5L0 10Z" fill="#A23B72"/>
+      </marker>
+    </defs>
+    <g id="bias-open-space-geometry">
+      <path d="M488 116H535V245H646V282" fill="none" stroke="#475569" stroke-width="10" stroke-linejoin="round"/>
+      <text x="488" y="106" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="15">obstacles</text>
+      <text x="688" y="105" fill="#64748B" font-family="Inter, Arial, sans-serif" font-size="15">open space</text>
+    </g>
+    <g id="bias-possible-headings" fill="none" stroke="#A23B72" stroke-linecap="round" marker-end="url(#pink-arrowhead)">
+      <path d="M580 230L676.3 102.2" stroke-width="3.5" opacity="0.22"/>
+      <path d="M580 230L704.3 129.1" stroke-width="3.5" opacity="0.42"/>
+      <path d="M580 230L723.1 158.4" stroke-width="3.5" opacity="0.7"/>
+      <path d="M580 230L736.2 195.4" stroke-width="3.5" opacity="0.3"/>
+    </g>
+    <path d="M580 230L710 145" fill="none" stroke="#0072B2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M696 145L716 141L707 159" fill="none" stroke="#0072B2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="580" cy="230" r="20" fill="#1E293B"/>
+    <circle cx="580" cy="230" r="6" fill="#F8FAFC"/>
+    <text x="674" y="132" fill="#0072B2" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700">μ</text>
+    <text x="619" y="306" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="18" text-anchor="middle">Bias toward open space</text>
+  </g>
+
+  <g id="stage-levy-segment" aria-label="Stage three: straight discrete Lévy segment executed by the robot">
+    <rect x="874" y="34" width="292" height="292" rx="18" fill="#F8FAFC" stroke="#0072B2" stroke-width="4"/>
+    <text x="908" y="82" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">3. Walk</text>
+    <g id="walk-straight-segment">
+      <path d="M929 193H1120" fill="none" stroke="#A23B72" stroke-width="8" stroke-linecap="round"/>
+      <path d="M1104 181L1126 193L1104 205" fill="none" stroke="#A23B72" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="929" cy="193" r="22" fill="#1E293B"/>
+      <circle cx="929" cy="193" r="7" fill="#F8FAFC"/>
+      <path d="M956 245H1100" fill="none" stroke="#0072B2" stroke-width="4" stroke-linecap="round"/>
+      <path d="M956 235V255M1100 235V255" fill="none" stroke="#0072B2" stroke-width="4" stroke-linecap="round"/>
+      <text x="976" y="279" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="18">step length d</text>
+    </g>
+    <text x="1020" y="306" fill="#1E293B" font-family="Inter, Arial, sans-serif" font-size="18" text-anchor="middle">Lévy segment</text>
+  </g>
+</svg>
